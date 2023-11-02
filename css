@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 100px 1fr 100px;
+  min-height: 100vh;
+ /*grid-template-areas: 
+  "header  header  header"
+  "content  content  content"
+  "footer  footer  footer";*/
+}
+
+div{
+  
+  color: white;
+  margin: 0;
+  
+}
+
+.container .header{
+  background: red;
+  grid-column:1/ -1 
+}
+
+.container .content{
+  background-color: blueviolet;
+  grid-column: 1/ -1;
+}
+
+.container .footer{
+  background-color: green;
+  grid-column: 1/-1;
+
+  
+}
